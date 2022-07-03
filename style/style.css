@@ -1,0 +1,84 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 300px;
+    width: 100%;
+    background-color: #ec1d24;
+    background-image: url(/img/marvel-characters.webp);
+    margin: auto;
+}
+
+.conteiner{
+    display:inline-flex ;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pagina{
+    margin-top: 50px;
+    height: 150px;
+    width: 100%;
+    background-color: #151515;
+}
+
+.navegação{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.marvel{
+    text-align: center;
+    font-size: 60px;
+    color: #d7102e;
+}
+
+.conteudo{
+    background-color: #151515;
+}
+
+#herois{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+
+.personagem{
+    width: 300px;
+    margin:20px;
+    border-style:solid;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.personagem > div >img{
+    
+    width: 300px;
+    border-bottom: solid;
+    border-top-right-radius:16px;
+    border-top-left-radius:16px;
+
+}
+
+.texto text{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
