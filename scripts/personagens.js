@@ -3,7 +3,7 @@ const timeStamp = '1656603541742';
 const apiKey = '544233afc2e21900577bc40608b3e3a0';
 const md5 = '92401b11d7da599321a76b5519ebfcaf';
 
-fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=20`
+fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${timeStamp}&apikey=${apiKey}&hash=${md5}&limit=20`
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) => {
@@ -17,13 +17,13 @@ fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStamp}&apikey=${
     jsonParsed.data.results.forEach(element =>{
 
 
-        if(element.description != null && element.description != ""  && element.images != 0){
+        //if(element.description != null && element.description != ""  && element.images != 0){
             const srcImage = element.thumbnail.path + '.' + element.thumbnail.extension 
-            const nameHero = element.title
+            const nameHero = element.name
             const descript = element.description
 
             createDivHero(srcImage,nameHero,descript, divHero);
-        }
+        //}
 
     })
     console.log(jsonParsed);
@@ -69,4 +69,3 @@ function info_marvel(info, copy, divToAppend){
     divPai.classList.add("copyright")
 
 }
-

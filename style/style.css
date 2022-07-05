@@ -82,3 +82,23 @@ a{
     margin: 10px;
 }
 
+.info{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    background-color: #151515;
+
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    color: rgb(205,0,0);
+}
+
+.copyright h3{
+    font-size: 40px;
+    
+}
+
