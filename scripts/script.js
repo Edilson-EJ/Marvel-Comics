@@ -7,52 +7,17 @@ fetch(`https://gateway.marvel.com:443/v1/public/comics?ts=${timeStamp}&apikey=${
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) => {
-    const divHero = document.querySelector('#herois');
+    
     const informação = document.querySelector('.info');
 
     const info = jsonParsed.attributionText;
     const copy = jsonParsed.copyright;
 
-
-    jsonParsed.data.results.forEach(element =>{
-
-
-        if(element.description != null && element.description != ""  && element.images != 0){
-            const srcImage = element.thumbnail.path + '.' + element.thumbnail.extension 
-            const nameHero = element.title
-            const descript = element.description
-
-            createDivHero(srcImage,nameHero,descript, divHero);
-        }
-
-    })
     console.log(jsonParsed);
     info_marvel(info, copy, informação);
 
 });
 
-function createDivHero(srcImage, nameHero, descript , divToAppend){
-    const divPai = document.createElement('div');
-    const divFilho = document.createElement('div')
-    const textName = document.createElement('text')
-    const textDescript = document.createElement('text')
-    const img = document.createElement('img')
-
-    textName.textContent = nameHero
-    img.src = srcImage
-    textDescript.textContent=descript
-
-    divFilho.appendChild(img)
-    divFilho.appendChild(textName)
-    divFilho.appendChild(textDescript)
-    divPai.appendChild(divFilho)
-    divToAppend.appendChild(divPai)
-    
-
-    divPai.classList.add("personagem");
-    divFilho.classList.add("texto");
-
-}
 
 function info_marvel(info, copy, divToAppend){
     const divPai = document.createElement('div');
@@ -69,4 +34,3 @@ function info_marvel(info, copy, divToAppend){
     divPai.classList.add("copyright")
 
 }
-
