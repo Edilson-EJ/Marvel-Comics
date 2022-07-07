@@ -1,3 +1,7 @@
+html body {
+    background-image: url(/img/marvel3.png);
+}
+
 
 .info_gerais{
     position: relative;
@@ -40,10 +44,10 @@
 }
 
 .introdução{
+    background-image: url(/img/marvel3.png);
     display: inline-flex;
     width: 100%;
     align-items: center;
-    margin: 20px 0 20px 0;
     justify-content: center;
     
 }
@@ -52,19 +56,27 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    padding: 30px 10px 30px 10px;
 }
 
 .intro{
     padding: 30px 10px 30px 10px;
     height: 300px;
     width: 300px;
-    color: #ffffff;
     border: 1px solid #000000;
     border-radius: 20px;
-    background-color: #151515;
+    background-color: #ffffff;
+
 }
 
 .intro h3{
     text-align: center;
     padding-bottom: 10px;
+}
+
+.video{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+
 }
