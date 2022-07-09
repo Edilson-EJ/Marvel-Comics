@@ -41,6 +41,11 @@ a{
     color: #ffffff;
 }
 
+.navegação a:hover{
+    transform: scale(1.3);
+    background-color: #d7102e;
+}
+
 .marvel{
     text-align: center;
     font-size: 60px;
@@ -82,6 +87,12 @@ a{
     margin: 10px;
 }
 
+.rodape{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(14, 11, 20);
+}
 .info{
     height: 200px;
     width: 100%;
@@ -100,5 +111,18 @@ a{
 .copyright h3{
     font-size: 40px;
     
+}
+
+.social{
+    background-color: rgb(14, 11, 20);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 70px;
+    padding-bottom: 20px;
+}
+
+.rede_social{
+    color: #ffffff;
 }
 
