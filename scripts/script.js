@@ -34,3 +34,7 @@ function info_marvel(info, copy, divToAppend){
     divPai.classList.add("copyright")
 
 }
+
+setTimeout(function(){
+    alert("Essas informações são disponibilizadas pela API da Marvel, é infelizmente algumas informações não são disponibilizadas como a imagem e a descrição de alguns conteúdos, mas o principal foco desse site e consumir a API da Marvel, por isso algumas informações vão fica faltando, pois não tem como escolher o conteúdo disponibilizado pela API.");
+},800);

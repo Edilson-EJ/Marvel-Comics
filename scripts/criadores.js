@@ -1,4 +1,3 @@
-
 const timeStamp = '1656603541742';
 const apiKey = '544233afc2e21900577bc40608b3e3a0';
 const md5 = '92401b11d7da599321a76b5519ebfcaf';
@@ -69,3 +68,5 @@ function info_marvel(info, copy, divToAppend){
     divPai.classList.add("copyright")
 
 }
+
+
