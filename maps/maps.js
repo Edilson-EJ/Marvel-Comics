@@ -1,10 +1,13 @@
+var cap = document.getElementById("address");
+console.log(cap.value)
+
 // Initialize and add the map
 function initMap() {
     // The location of Uluru
     const uluru = { lat: -25.344, lng: 131.031 };
     // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
+        zoom: 8,
         center: uluru,
     });
     // The marker, positioned at Uluru
@@ -16,18 +19,29 @@ function initMap() {
 
 window.initMap = initMap;
 
-var axios = require('axios');
+var geocoder;
+var map;
+function initialize() {
+    geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(-34.397, 150.644);
+    var mapOptions = {
+    zoom: 8,
+    center: latlng
+    }
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+}
 
-var config = {
-    method: 'get',
-    url: 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=Washington%2C%20DC&destinations=New%20York%20City%2C%20NY&units=imperial&key=AIzaSyDZZk_0sFnYfjK5jg9nvO1OT2vQyxqraTg',
-    headers: { }
-};
-
-axios(config)
-.then(function (response) {
-    console.log(JSON.stringify(response.data));
-})
-.catch(function (error) {
-    console.log(error);
+function codeAddress() {
+    var address = document.getElementById('address');
+    geocoder.geocode( { 'address': address}, function(results, status) {
+        if (status == 'OK') {
+            map.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+                map: map,
+                position: results[0].geometry.location
+            });
+        } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+    }
 });
+}

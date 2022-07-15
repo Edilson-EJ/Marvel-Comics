@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <div class="formulario">
+        <div class="formulario" onclick="codeAddress()">
             <h2 class="title">Cadastro</h2>
             <form class="form">
                 <div class="form-control">
@@ -25,12 +25,8 @@
                     <input type="tel" id="tel" placeholder="Digite seu telefone">
                 </div>
                 <div class="form-control">
-                    <label for="text">Estado</label>
-                    <input type="text" id="text" placeholder="Digite o Estado"> 
-                </div>
-                <div class="form-control">
-                    <label for="text">Ciade</label>
-                    <input type="text" id="text" placeholder="Digite a Cidade">
+                    <label for="address">Estado e Cidade</label>
+                    <input type="address" id="address" name="address" placeholder=" Ex: Jaguaribe, CE"
                 </div>
                 <div class="form-control">
                     <label for="text">Rua</label>
@@ -38,20 +34,23 @@
                 </div>
                 <div class="form-control">
                     <label for="number">Número</label>
-                    <input type="number" id="number" placeholder="Digite o número">
+                    <input type="number" id="number"  placeholder="Digite o número">
                 </div>
                 <div class="form-control">
                     <label for="text">Bairro</label>
                     <input type="text" id="text" placeholder="Digite o Bairro">
                 </div>
                 <div class="form">
-                    <button type="submit" class="buttom">Cadastrar</button>
+                    <button><a href="/maps/maps.html" type="submit" class="buttom" onclick="codeAddress()" target="_blank">Cadastrar</a></button>
                 </div>
             </form>
         </div>
 
 
     </main>
+
+    <script src="/maps/maps.js"></script>
+    <script src="/teste/contato.js"></script>
 </body>
 
 </html>
