@@ -53,6 +53,7 @@ body{
 
 .buttom{
     text-align: center;
+    text-decoration: none;
     background-color:  #151515;
     border: 2px solid #151515;
     color: #fff;
@@ -60,4 +61,14 @@ body{
     width: 100%;
     border-radius: 10px;
     padding: 10px;
+}
+
+div a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+div .buttom:hover{
+    transform: scale(1);
+    background-color: #d7102e;
 }

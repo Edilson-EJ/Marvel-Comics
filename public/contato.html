@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/contato.css" >
-    <title>Contato</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Cadastro</title>
 </head>
 <body>
     <main>
-        <div class="formulario" onclick="codeAddress()">
+        <div class="formulario">
             <h2 class="title">Cadastro</h2>
             <form class="form">
                 <div class="form-control">
@@ -25,10 +26,6 @@
                     <input type="tel" id="tel" placeholder="Digite seu telefone">
                 </div>
                 <div class="form-control">
-                    <label for="address">Estado e Cidade</label>
-                    <input type="address" id="address" name="address" placeholder=" Ex: Jaguaribe, CE"
-                </div>
-                <div class="form-control">
                     <label for="text">Rua</label>
                     <input type="text" id="text" placeholder="Digite a Rua">
                 </div>
@@ -41,7 +38,7 @@
                     <input type="text" id="text" placeholder="Digite o Bairro">
                 </div>
                 <div class="form">
-                    <button><a href="/maps/maps.html" type="submit" class="buttom" onclick="codeAddress()" target="_blank">Cadastrar</a></button>
+                    <button type="submit" class="buttom" target="_blank"><a src="/maps/maps.html">Cadastrar</a></button>
                 </div>
             </form>
         </div>
