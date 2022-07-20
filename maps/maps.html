@@ -1,87 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
 
-    <title>Add Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="/maps/maps.css" />
-    <script type="module" src="/maps/maps.js"></script>
-  </head>
-  <body>
+        <title>Mapa das lojas mais próximo</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" type="text/css" href="/maps/maps.css" />
+        <script type="module" src="/maps/maps.js"></script>
+    </head>
+<body>
+    <main class="principal">
+        <header class="conteiner">
+            <section class="pagina">
+                <h1 class="marvel">Marvel Comics</h1>
+            </section>
+    
+        </header>
+    
+        <dv class="text_cliente">
+            <p id="text_p">A nossa felicidade é ver a satisfação do cliente, por isso, sempre nos dedicamos para entregar o melhor serviço! Muito obrigado pela confiança! Pode contar sempre conosco!
+            </p>
+            <h3 id="infor_enderço">Procure a loja mais perto de você! </h3>
+        </dv>
 
-    <header class="conteiner">
-      <section class="pagina">
-          <h1 class="marvel">Marvel Comics</h1>
-      </section>
+        <div id="floating-panel">
+            <b>Escolha a Loja mais Perto de Você: </b>
+            <select id="start">
+                <option value="Fortaleza, CE">Fortaleza</option>
+                <option value="Salvador, BA">Salvador</option>
+                <option value="Jaguaribe, CE">Jaguaribe</option>
+                <option value="São Miguel, RN">São Miquel</option>
+            </select>
+            <b>Digite sua Cidade: </b>
+    
+            <input id="end" placeholder="Ex: Jaguaribe, Ce" name="enedreco">
+    
+        </div>
 
-  </header>
+    </main>
 
-
-    <h3 id="infor_enderço">Informe por favor os dados da Entrega:</h3>
-    <div id="floating-panel">
-      <b>Escolha a Loja mais Perto de Você: </b>
-      <select id="start">
-            <option value="Fortaleza, CE">Fortaleza</option>
-            <option value="Salvador, BA">Salvador</option>
-            <option value="Jaguaribe, CE">Jaguaribe</option>
-            <option value="São Miguel, RN">São Miquel</option>
-      </select>
-      <b>Digite sua Cidade: </b>
-
-      <input id="end" placeholder="Ex: Jaguaribe, Ce" name="enedreco">
-
-    </div>
-    <div id="map"></div>
-    <div>
-      <img src="/video/homem de ferro.gif" class="video_hf">
-    </div>
-
-    <p id="text_p">A nossa felicidade é ver a satisfação do cliente, por isso, sempre nos dedicamos para entregar o melhor serviço! Muito obrigado pela confiança! Pode contar sempre conosco!
-
-    </p>
+        <div id="map"></div>
+        <div class="border"></div>
+        <div class="hulk">
+            <img src="/img/hulk.png">
+        </div>
+        
+    
+    
+    
 
     <footer>
-      <div class="rodape">
-          <div class="info"></div>
-          <div class="social">
-              <div class="rede_social">
-                  <a href="https://www.instagram.com/marvel/" target="_blank">
-                      <img src="/img/instagram.png">
-                      <h4>Instagram</h4>
-                  </a>
-                  
-              </div>
-  
-              <div class="rede_social">
-                  <a href="https://pt-br.facebook.com/MarvelBR/" target="_blank">
-                      <img src="/img/facebook.png">
-                      <h4>Facebook</h4>
-                  </a>
-                  
-              </div>
-  
-              <div class="rede_social">
-                  <a href="https://twitter.com/marvel" target="_blank">
-                      <img src="/img/twitter.png">
-                      <h4>Twitter</h4>
-                  </a>
-                  
-              </div>
-  
-              <div class="rede_social">
-                  <a href="https://www.youtube.com/channel/UCItRs-h8YU1wRRfP637614w" target="_blank">
-                      <img src="/img/youtube.png">
-                      <h4>Youtube</h4>
-                  </a>
-                  
-              </div>
-          </div>
-      </div>
-  </footer>
+        <div class="rodape">
+            <div class="info"></div>
+            <div class="social">
+                <div class="rede_social">
+                    <a href="https://www.instagram.com/marvel/" target="_blank">
+                        <img src="/img/instagram.png">
+                        <h4>Instagram</h4>
+                </a>
+                
+            </div>
+
+                <div class="rede_social">
+                    <a href="https://pt-br.facebook.com/MarvelBR/" target="_blank">
+                        <img src="/img/facebook.png">
+                        <h4>Facebook</h4>
+                    </a>
+                
+                </div>
+
+                <div class="rede_social">
+                    <a href="https://twitter.com/marvel" target="_blank">
+                        <img src="/img/twitter.png">
+                        <h4>Twitter</h4>
+                    </a>
+                
+                </div>
+
+                <div class="rede_social">
+                    <a href="https://www.youtube.com/channel/UCItRs-h8YU1wRRfP637614w" target="_blank">
+                        <img src="/img/youtube.png">
+                        <h4>Youtube</h4>
+                </a>
+                
+                </div>
+            </div>
+    </div>
+</footer>
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZZk_0sFnYfjK5jg9nvO1OT2vQyxqraTg&callback=initMap&v=weekly"

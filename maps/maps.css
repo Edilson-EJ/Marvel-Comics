@@ -18,15 +18,17 @@
 header{
   height: 300px;
   width: 100%;
-  background-color: #ec1d24;
-  background-image: url(/img/marvel-characters.webp);
+  
   margin: auto;
 }
+
+
 
 .conteiner{
   display:inline-flex ;
   justify-content: center;
   gap: 50px;
+  background-image: url(/img/marvel-characters.webp);
 }
 
 .pagina{
@@ -38,8 +40,8 @@ header{
 
 
  #map {
-  width: 700px;
-  height: 300px;
+  width: 100%;
+  height: 400px;
   display: flex;
   margin: auto;
   align-content: center;
@@ -65,10 +67,15 @@ body {
   padding: 30px;
 }
 
+.text_cliente{
+  background-image: url(/img/pexels-joão-jesus-925743.jpg);
+}
+
 #floating-panel {
   
+  background-color: #151515;
   z-index: 5;
-  background-color: #fff;
+  color: #fff;
   padding: 5px;
   border: 1px solid #999;
   text-align: center;
@@ -97,15 +104,24 @@ a{
 #text_p{
   color: #000000;
   font-size: 30px;
+  padding: 20px 0 20px 0;
 }
 
-.video_hf{
+.border{
+  height: 5px;
+  width: 100%;
+  background: rgb(44,157,61);
+  background: linear-gradient(90deg, rgba(44,157,61,1) 4%, rgba(83,107,87,1) 77%, rgba(0,255,38,1) 100%);
+
+}
+
+.hulk{
   display: flex;
   margin: auto;
-  height: 300px;
-  width: 300px;
+  background-image: url(/img/pexels-joão-jesus-925743.jpg);
   justify-content: center;
   align-content: center;
+
 }
 
 .rodape{
