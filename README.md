@@ -1,7 +1,8 @@
-# Marvel-Comics
-Marvel Comics
+#Marvel Comics
+Esse site foi construído utilizando a API da Marvel para pegar informações sobre essa editora de quadrinhos que tem anos de histórias e muitos personagens, é também utilizando a API do Google Maps, para gerar um mapa e o usuário pode localizar a loja fictícia mais próximo dele.
 
-Marvel Comics
-Quadrinhos da Marvel
+Links das Apis utilizadas
 
-#Projeto elaborado usando a API da Marvel e a API do Google Maps, com o intuiuto de mostrar um site que você pode comprar quadrinhos e saber um pouco da história da editora.
+https://developer.marvel.com/
+
+https://developers.google.com/maps/documentation/directions/?hl=pt_BR
