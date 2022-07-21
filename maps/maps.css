@@ -18,7 +18,6 @@
 header{
   height: 300px;
   width: 100%;
-  
   margin: auto;
 }
 
@@ -28,18 +27,24 @@ header{
   display:inline-flex ;
   justify-content: center;
   gap: 50px;
-  background-image: url(/img/marvel-characters.webp);
+  background-image: url(/img/marvelbamer.png);
 }
 
 .pagina{
-  margin-top: 50px;
-  height: 150px;
+  padding-top: 10px;
+  height: 50px;
   width: 100%;
   background-color: #151515;
 }
 
+.principal{
+  
+  width: 100%;
+  height: 200px;
+}
 
- #map {
+
+#map {
   width: 100%;
   height: 400px;
   display: flex;
@@ -47,6 +52,7 @@ header{
   align-content: center;
   justify-content: center;
   padding-top: 50px;
+  
 }
 
 /* 
@@ -68,7 +74,8 @@ body {
 }
 
 .text_cliente{
-  background-image: url(/img/pexels-joão-jesus-925743.jpg);
+  background-image: url(/Marvel-Comics-master/img/marvelfundo.jpg);
+  background-color: #d7102e;
 }
 
 #floating-panel {
@@ -86,10 +93,11 @@ body {
 }
 
 .marvel{
-  text-align: center;
-  padding-top: 30px;
-  font-size: 60px;
-  color: #d7102e;
+  display: flex;
+    height: 100px;
+    width: 150px;
+    margin-top: 100px;
+    justify-content: center;
 }
 
 #end{
@@ -101,10 +109,13 @@ a{
   color: #ffffff;
 }
 
+
 #text_p{
   color: #000000;
   font-size: 30px;
-  padding: 20px 0 20px 0;
+  margin-top: 120px;
+  text-align: center;
+
 }
 
 .border{
@@ -125,13 +136,12 @@ a{
 }
 
 .rodape{
-  height: 200px;
   width: 100%;
   margin: auto;
   background-color: rgb(14, 11, 20);
+  margin-top: 10px;
 }
 .info{
-  height: 200px;
   width: 100%;
   margin: auto;
   background-color: rgb(14, 11, 20);
@@ -142,11 +152,12 @@ a{
   width: 100%;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 20px;
   color: rgb(205,0,0);
 }
 
 .copyright h3{
-  font-size: 40px;
+  font-size: 50px;
   
 }
 

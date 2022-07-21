@@ -9,22 +9,21 @@
         <title>Mapa das lojas mais próximo</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <link rel="stylesheet" type="text/css" href="/maps/maps.css" />
-        <script type="module" src="/maps/maps.js"></script>
     </head>
 <body>
     <main class="principal">
         <header class="conteiner">
-            <section class="pagina">
-                <h1 class="marvel">Marvel Comics</h1>
-            </section>
-    
+            <img src="/img/marvel-logo-4.png" class="marvel">
         </header>
-    
+    </main>
+
+
         <dv class="text_cliente">
             <p id="text_p">A nossa felicidade é ver a satisfação do cliente, por isso, sempre nos dedicamos para entregar o melhor serviço! Muito obrigado pela confiança! Pode contar sempre conosco!
             </p>
             <h3 id="infor_enderço">Procure a loja mais perto de você! </h3>
         </dv>
+
 
         <div id="floating-panel">
             <b>Escolha a Loja mais Perto de Você: </b>
@@ -40,14 +39,9 @@
     
         </div>
 
-    </main>
 
         <div id="map"></div>
-        <div class="border"></div>
-        <div class="hulk">
-            <img src="/img/hulk.png">
-        </div>
-        
+    
     
     
     
@@ -84,19 +78,21 @@
                     <a href="https://www.youtube.com/channel/UCItRs-h8YU1wRRfP637614w" target="_blank">
                         <img src="/img/youtube.png">
                         <h4>Youtube</h4>
-                </a>
+                    </a>
                 
                 </div>
             </div>
-    </div>
-</footer>
+        </div>
+    </footer>
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZZk_0sFnYfjK5jg9nvO1OT2vQyxqraTg&callback=initMap&v=weekly"
         defer
     ></script>
+    
+    <script type="module" src="/scripts/script.js"></script>
 
-    <script src="/scripts/script.js"></script>
+    <script src="/maps/maps.js"></script>
 
     </body>
 </html>
