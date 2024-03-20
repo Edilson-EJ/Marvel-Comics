@@ -1,8 +1,13 @@
-#Marvel Comics
-Esse site foi construído utilizando a API da Marvel para pegar informações sobre essa editora de quadrinhos que tem anos de histórias e muitos personagens, é também utilizando a API do Google Maps, para gerar um mapa e o usuário pode localizar a loja fictícia mais próximo dele.
+Marvel Comics
+Este site foi meticulosamente construído, integrando a API da Marvel para fornecer informações sobre essa renomada editora de quadrinhos, que possui décadas de histórias e um vasto universo de personagens. Além disso, o site faz uso da API do Google Maps, permitindo aos usuários localizar facilmente a loja fictícia mais próxima de sua localização.
 
-Links das Apis utilizadas
+APIs Utilizadas:
+API da Marvel: A API da Marvel oferece acesso a uma ampla gama de informações sobre personagens, quadrinhos, séries e muito mais, permitindo aos usuários explorar o vasto universo da Marvel Comics de forma interativa e imersiva.
 
-https://developer.marvel.com/
+Link da API da Marvel
 
-https://developers.google.com/maps/documentation/directions/?hl=pt_BR
+API do Google Maps: A API do Google Maps é utilizada para gerar mapas interativos e fornecer direções precisas para os usuários. Com esta integração, os usuários podem facilmente encontrar a loja fictícia mais próxima de sua localização atual, tornando a experiência de navegação mais conveniente e envolvente.
+
+Link da API do Google Maps
+
+Seja bem-vindo a explorar o universo da Marvel Comics e encontrar sua loja fictícia favorita!
